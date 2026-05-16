@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 1000px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        area:hover {
+    outline: 2px solid red !important;
+}
+    </style>
+</head>
+<body>
+    <img src="teste/mapa.jpg" alt="Mapa do Brasil" usemap="#mapaBrasil" width="1000" height="1000">
+    <map name="mapaBrasil">
+        <area shape="poly" coords="660,542, 735,502, 800,530, 836,558, 851,623, 837,678, 822,720, 781,732, 714,726, 674,706, 611,647, 579,642, 576,616, 629,584" href="https://pt.wikipedia.org/wiki/Minas_Gerais" alt="Minas gerais" title="Minas Gerais" target="_blank">
+        <!-- Tocantins (Verde, ao norte de MG/GO) -->
+        <area shape="poly" 
+            coords="596,281,623,286,647,333,680,422,692,472,668,477,610,477,592,451,595,404,586,375" 
+            href="https://pt.wikipedia.org/wiki/Tocantins" 
+            alt="Tocantins" 
+            title="Tocantins"
+            target="_blank">
+
+        <!-- Paraná (Roxo, abaixo de SP) -->
+        <area shape="poly" 
+            coords="498,728,552,709,612,716,616,742,598,784,570,812,504,801,488,777" 
+            href="https://pt.wikipedia.org/wiki/Paraná" 
+            alt="Paraná" 
+            title="Paraná"
+            target="_blank">
+       <!-- RETÂNGULO: Distrito Federal (DF) -->
+        <area shape="rect" 
+            coords="646,514,668,528" 
+            href="https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)" 
+            alt="Distrito Federal" 
+            title="Distrito Federal (Exemplo Retângulo)"
+            target="_blank">
+
+        <!-- CÍRCULO: Exemplo sobre a região do Rio de Janeiro -->
+        <area shape="circle" 
+            coords="790,750,25" 
+            href="#" 
+            alt="Rio de Janeiro" 
+            title="Rio de Janeiro (Exemplo Círculo)">
+    </map>
+</body>
+</html>
