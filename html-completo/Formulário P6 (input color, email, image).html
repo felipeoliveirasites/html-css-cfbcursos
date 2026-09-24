@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário P6 (input color, email, image)</title>
+    <!-- color, email ,image-->
+     <style>
+      
+        input{ }
+        .quebra{
+            display: block;
+        }
+        .espaco{
+            margin-bottom: 15px;
+        }
+        .espaco_t{
+            margin-top: 15px;
+        }
+        form{
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }
+
+        #dv_btns{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+     <form action="#" name="f_cadastro" method="get" enctype="">
+
+      <label for="">Selecione uma cor: >
+      <input class="quebra" type="color" name="f_cor" >
+
+      <label class="quebra espaco_t" for="">Digite seu email:</label>
+      <input type="email" name="f_email">
+
+      <input src="teste/mapa.jpg" class="quebra espaco_t" type="image" name="f_enviar2" width="200px">
+
+      <input class="espaco_t quebra" type="submit" value="Enviar" name="f_enviar">
+
+    </form>
+</body>
+</html>
+
+

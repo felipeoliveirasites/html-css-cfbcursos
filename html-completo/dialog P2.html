@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dialog P2</title>
+    <link rel="stylesheet" href="dialog.css">
+    <script>
+        function abrirDialog(){
+            document.getElementById("btn_dialog").innerHTML = "Fechar"
+            document.getElementById("d1").setAttribute("open","true")
+        }
+
+        function fecharDialog(){
+            document.getElementById("btn_dialog").innerHTML = "Abrir"
+            document.getElementById("d1").removeAttribute("open")
+        }
+
+        function controlaDialog(title,msg){
+            if(document.getElementById("d1").open){
+                fecharDialog()
+            }else{
+                abrirDialog()
+                document.getElementById("titulo").innerHTML = title
+                document.getElementById("msg2").innerHTML = msg
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="controlaDialog('Curso de HTML','Curso de HTML completo e profissiona do CFB Cursos')" id="btn_dialog">Abrir</button>
+    <button onclick="controlaDialog('teste','teste')">teste</button>
+    <dialog id="d1">
+        <div class="dialog_titulo">
+            <h3 id="titulo"></h3>
+        </div>
+
+        <div class="dialog_corpo">
+            <p id="msg1">Caixa de dialogo nativa do HTML5</p>
+            <p id="msg2"></p>
+        </div>
+
+        <div class="dialog_rodape">
+            <button id="btn_fechar" onclick="fecharDialog()">Fechar</button>
+        </div>
+    </dialog>
+</body>
+</html>

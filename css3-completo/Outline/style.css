@@ -1,0 +1,27 @@
+div{
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    border: solid black 10px;
+}
+
+#d1{
+    margin-right: 0px;
+    outline-color: red;
+    outline-style: solid;
+    outline-width: 10px;
+    outline-offset: 40px;
+}
+
+#d2{
+    width: 400px;
+    height: 400px;
+    outline: 10px solid red;
+    outline-offset: 9px;
+}
+
+body{
+    padding: 0;
+    margin: 10px;
+}

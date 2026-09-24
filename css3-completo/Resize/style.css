@@ -1,0 +1,23 @@
+div#cfb{
+    width: 300px;
+    height: 200px;
+   
+    padding: 10px;
+    min-width: 150px; /* O LIMITE! O usuário não consegue diminuir para menos de 150px */
+    max-width: 600px; /* Opcional: Limite máximo que o usuário pode esticar */
+    resize: both;
+    overflow: hidden;
+    float: left;
+}
+
+div#cfb:hover{
+ border: 3px solid #f00;
+    border-radius: 10px;
+}
+
+#cfb img{
+    width: 100%;
+    height: 100%;
+    resize: both;
+    overflow: auto;
+}

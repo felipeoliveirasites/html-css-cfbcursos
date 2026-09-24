@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário P11 (fieldset)</title>
+</head>
+     <style>
+      
+        input{ }
+        .quebra{
+            display: block;
+        }
+        .espaco{
+            margin-bottom: 15px;
+        }
+        .espaco_t{
+            margin-top: 15px;
+        }
+        form{
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }
+
+        #dv_btns{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+     <form action="#" name="f_cadastro" method="get" >
+
+        <fieldset disabled>
+            <legend>Dados 1:</legend>
+            <label for="f_nome">Nome: </label>
+            <input type="text" name="f_nome" id="f_nome" class="quebra">
+            <br>
+            <label for="f_telefone">Telefone:</label>
+            <input type="tel" name="f_telefone" id="f_telefone" class="quebra">
+            <br>
+        </fieldset> 
+        <br>
+        <fieldset>
+            <legend>Dados 2:</legend>
+            <label class="quebra" for="f_carro">Possui carro?</label>
+            <input type="radio" name="f_carro" id="f_carro" value="s" checked>SIM <br>
+            <input type="radio" name="f_carro" id="f_carro_nao" value="n">Não
+            <br>
+            <label class="quebra" for="f_casa">Possui casa prórpia?</label>
+            <input type="radio" name="f_casa" id="f_casa" value="s" checked>SIM <br>
+            <input type="radio" name="f_casa" id="f_casa    _nao" value="n">Não
+            <br>
+        </fieldset>
+      <input class="espaco_t quebra" type="submit" value="Enviar" name="f_enviar">
+
+    </form>
+</body>
+</html>

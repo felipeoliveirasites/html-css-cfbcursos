@@ -1,0 +1,28 @@
+p{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-justify: justify;
+    animation-name: anima;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: alternate-reverse;
+    left: 500px;
+    top: 500px;
+    /* background-color: white; */
+}
+
+@keyframes anima {
+    0%{left: 0px;top: 0px; }
+    25%{left: 500px; top: 0px; }
+    50%{left: 500px; top: 500px;}
+    75%{left: 0px;top:500px;}
+    100%{left: 0px; top: 0px; }
+}
+

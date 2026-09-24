@@ -1,0 +1,46 @@
+p{
+   text-transform: capitalize;
+   text-indent: 50px;
+   letter-spacing: 2px;
+   line-height: 1;
+   direction: ltr;
+   word-spacing: 10px;
+}
+
+div{
+    width: 350px;
+    height: 150px;
+    border: 1px solid black;
+    white-space: normal;
+    overflow: auto;
+    word-break: break-all;
+    text-align-last: left    ;
+}
+.p1{
+    color: #f00;
+    text-align: left;
+    text-decoration: none;
+}
+
+.p2{
+    color: #0f0;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.p3{
+    color: #00f;
+    text-align: center;
+    text-decoration: overline;
+}
+
+
+.p4{
+    color: #ff0;
+    text-align: justify;
+    text-decoration: line-through;
+}
+
+a{
+    text-decoration: none;
+}

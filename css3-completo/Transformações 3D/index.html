@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformações 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer>
+        let y,n =0,ny=0, rotYINT;
+
+        function rotateYDIV(){
+            y=document.getElementById("dv1")
+            clearInterval(rotYINT);
+            rotYINT=setInterval("startYRotate()",10)
+        }
+
+        function startYRotate(){
+            ny=ny+1
+            y.style.transform="rotateY("+ny+"deg) translate(200px, 200px)"
+            if(ny==180 || ny>=360){
+                clearInterval(rotYINT)
+                if(ny>=360){ny=0}
+            }
+        }
+        
+
+    </script>
+</head>
+<body>
+    <div id="dv1" onclick="rotateYDIV()">
+        CFB
+    </div>
+</body>
+</html> 

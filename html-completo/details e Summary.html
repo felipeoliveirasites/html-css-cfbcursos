@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details e Summary</title>
+    <style>
+        summary::marker{
+            color:red;
+        }
+        details[open] summary::marker{
+            color: blue;
+        }
+
+        details#cursos article{
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 15px;
+        }
+
+        details{
+            background-color: #888;
+             border-radius: 40px;
+        }
+
+        summary{
+            background-color: white;
+           
+        }
+       
+    </style>
+</head>
+<body>
+    <details open id="cursos">
+        <summary>Cursos do Nosso Canal</summary>
+        <article>
+            <p>HTML Completo e profissinal</p>
+            <p>HTML5</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>QtCreator</p>
+            <p>C++</p>
+            <p>Arduino</p>
+            <p>PHP/MySQL</p>
+        </article>
+           <article>
+            <p>HTML Completo e profissinal</p>
+            <p>HTML5</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>QtCreator</p>
+            <p>C++</p>
+            <p>Arduino</p>
+            <p>PHP/MySQL</p>
+      
+    </details>
+    <details open >
+        <summary>Cursos do Nosso Canal</summary>
+        <article>
+            <p>HTML Completo e profissinal</p>
+            <p>HTML5</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>QtCreator</p>
+            <p>C++</p>
+            <p>Arduino</p>
+            <p>PHP/MySQL</p>
+        </article>
+           <article>
+            <p>HTML Completo e profissinal</p>
+            <p>HTML5</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>QtCreator</p>
+            <p>C++</p>
+            <p>Arduino</p>
+            <p>PHP/MySQL</p>
+      
+    </details>
+
+    <article>
+            <p>HTML Completo e profissinal</p>
+            <p>HTML5</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>QtCreator</p>
+            <p>C++</p>
+            <p>Arduino</p>
+            <p>PHP/MySQL</p>
+        </article>
+        <dialog id="meuModal">
+  <p>Conteúdo importante do modal!</p>
+  <button onclick="this.closest('dialog').close()">Fechar</button>
+</dialog>
+
+<button onclick="document.getElementById('meuModal').showModal()">Abrir Modal Nativo</button>
+
+<label for="navegador">Escolha seu navegador:</label>
+<input list="navegadores" id="navegador" name="navegador">
+
+<datalist id="navegadores">
+  <option value="Chrome">
+  <option value="Firefox">
+  <option value="Safari">
+  <option value="Edge">
+</datalist>
+
+<label for="data-consulta">Agende seu horário:</label>
+<input type="date" id="data-consulta">
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dialog</title>
+    <script>
+        function abrirDialog(){
+            document.getElementById("d1").setAttribute("open","")
+            
+        }
+
+        function fecharDialog(){
+              document.getElementById("d1").removeAttribute("open")
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="abrirDialog()">Abrir</button>
+    <button onclick="fecharDialog()">Fechar</button>
+     <dialog id="d1" open>
+         <p>O <dfn><abbr title="Hypertext Markup Language">HTML</abbr></dfn> é uma linguagem de marcação utilizada para estruturar páginas web.</p>
+         
+             <p>O <dfn><abbr title="Cascading Style Sheets">CSS</abbr></dfn> é um recurso utilizado para adicionar estilos e layouts em páginas web.</p>
+     </dialog>
+    
+</body>
+</html>

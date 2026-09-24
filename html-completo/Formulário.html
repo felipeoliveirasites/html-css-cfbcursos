@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        input{ }
+        .quebra{
+            display: block;
+        }
+        .espaco{
+            margin-bottom: 15px;
+        }
+        .espaco_t{
+            margin-top: 15px;
+        }
+        form{
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }
+
+        #dv_btns{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" name="f_cadastro" method="get" enctype="">
+        <label for="">Nome: </label>
+        <input class="espaco quebra" type="text" name="f_nome" value="CFB cursos" maxlength="20" size="25">
+        <label for="">Senha</label>
+        <input class="espaco quebra" type="password" name="f_senha" maxlength="10" size="15">
+        <label for="" class="quebra">Esportes favoritos:</label>
+        <input type="checkbox" name="f_fut" >Futebol
+        <input type="checkbox" name="f_bask" id="" >Basketbol
+        <input type="checkbox" name="f_nat" id="">Natação
+        <label class="quebra espaco_t" for="">Possui carro?</label>
+        <input type="radio" name="f_carro" value="s" checked>Sim
+        <input type="radio" name="f_carro" value="n">Não
+        <div id="dv_btns" class="espaco_t">
+            <input type="submit" name="F-btn_limpar" value="Gravar">
+            <input type="reset" name="f_btn_limpar" value="Limpar">
+            <input type="button" name="f_nada" value="nada">
+        </div>
+    </form>
+</body>
+</html>

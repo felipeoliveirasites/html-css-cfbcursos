@@ -1,0 +1,21 @@
+p{
+    width: 300px;
+    height: 250px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    transition:background .1s, color .1s, transform .1s;
+    transition: height .1s, width .1s,background .1s, color .1s, transform .1s;
+    /* transition-timing-function: cubic-bezier(0,0.5,1,0.5); */
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+
+p:hover{
+  /*   width: 500px;
+    height: 120px; */
+    background-color: red;
+    color: white;
+    transform: rotate(360deg);
+}

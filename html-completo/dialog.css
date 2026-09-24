@@ -1,0 +1,48 @@
+dialog{
+    padding: 0;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0 0 10px black;
+    flex-direction: column;
+}
+
+dialog::backdrop{
+    background-color: rgba(0,0,0,.5);
+}
+
+.dialog_titulo{
+    background-color: #eee;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #aaa;
+    height: 40px;
+}
+
+.dialog_corpo{
+    background-color: #fff;
+    padding: 7px;
+}
+
+.dialog_rodape{
+    background-color: #fff;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    padding: 7px;
+    border-top: 1px solid #aaa;
+}
+
+#btn_fechar{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 7px;
+
+    &:hover{
+        background-color: #eee;
+    }
+}
+

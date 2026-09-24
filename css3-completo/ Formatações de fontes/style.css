@@ -1,0 +1,14 @@
+@font-face{
+    font-family: fontCFB;
+    src:url(Woff2/Butler-Free-Rmn-St.woff2);
+    src: url(Woff2/Butler-Free-Blk-St.woff2);
+}
+
+
+p{
+    font-family: "Special Elite", system-ui;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: black;
+    font-variant:  normal;
+}

@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+
+p{
+    border: 1px solid red;
+    margin: 0;
+    text-align: center;
+    margin: auto;
+    text-align: center;
+}
+
+div{
+    border: 1px solid black;
+    /*margin: 50px 200px 300px 50px;*/
+    margin: auto;
+}
+
+#dv1{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    /* margin: 50px 200px 300px 50px; */
+    /*margin-top: 150px;
+    margin-right: 400px;
+    margin-bottom: 300px;
+    margin-left: 10px;*/
+
+    p{
+        width: 200px;
+    }
+}
+
+
+
+#dv2{
+    width: 200px;
+    height: 200px;
+   
+}

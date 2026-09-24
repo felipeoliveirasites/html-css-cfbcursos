@@ -1,0 +1,23 @@
+#obmenu{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    background-color: #400;
+    color: white;
+    padding: 0;
+    margin: 0;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+
+    &:hover{
+        background-color: #b44;
+    }
+}

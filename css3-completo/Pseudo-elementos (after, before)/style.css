@@ -1,0 +1,16 @@
+.cfb::before{
+    content: url(marcador-p.webp);
+    color: red;
+    display: inline-block;
+    width: 50px;
+    height: 50px;  
+    vertical-align: middle; 
+}
+
+.cfb::after{
+    content: " - cfb";
+}
+
+p{
+    font-size: 40px;
+}

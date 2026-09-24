@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário P10 (list, datalist)</title>
+</head>
+     <style>
+      
+        input{ }
+        .quebra{
+            display: block;
+        }
+        .espaco{
+            margin-bottom: 15px;
+        }
+        .espaco_t{
+            margin-top: 15px;
+        }
+        form{
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }
+
+        #dv_btns{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+     <form action="#" name="f_cadastro" method="get" enctype="multipart/form-data" >
+
+     <input list="f_transportes" name="f_transportes">
+     <datalist id="f_cores">
+        <option value="red">Vermelho</option>]
+        <option value="green">Veder</option>
+        <option value="blue">Azul</option>
+        <option value="yellhow">Amarelo</option>
+        <option value="white">Branco</option>
+        <option value="beige">Bege</option>
+     </datalist>
+
+     <datalist id="f_transportes">
+        <option value="01">carro</option>]
+        <option value="02">avião</option>
+        <option value="03">navio</option>
+        <option value="04">motocicleta</option>
+     </datalist>
+
+      <input class="espaco_t quebra" type="submit" value="Enviar" name="f_enviar">
+
+    </form>
+</body>
+</html>

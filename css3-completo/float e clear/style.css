@@ -1,0 +1,16 @@
+img{
+    border: 3px solid rgb(235, 17, 17);
+    
+}
+
+#img1{
+    float: left;
+}
+
+#img2{
+    float: right;
+}
+
+.fix{
+    clear: both;
+}
